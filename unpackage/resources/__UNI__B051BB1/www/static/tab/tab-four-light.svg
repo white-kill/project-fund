@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.906" height="19.61" viewBox="0 0 22.906 19.61">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.849" y1="0.173" x2="0.088" y2="0.97" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1063f9"/>
+      <stop offset="1" stop-color="#07b5f4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.9" y1="0.162" x2="0.12" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1462fe"/>
+      <stop offset="1" stop-color="#20b0fc"/>
+    </linearGradient>
+  </defs>
+  <g id="组_112" data-name="组 112" transform="translate(-371 -727)">
+    <path id="路径_94" data-name="路径 94" d="M10,0c5.523,0,10,4.029,10,9a9.771,9.771,0,0,1-9.712,9.6,14.5,14.5,0,0,1-4.21-.6c-1.266-.411-2.995,1.274-4.311,0-.233-.218.071-3.795-.311-4.32A8.08,8.08,0,0,1,0,9C0,4.029,4.477,0,10,0Z" transform="translate(371 727)" fill="url(#linear-gradient)"/>
+    <path id="减去_3" data-name="减去 3" d="M12.474,19.61c-.219,0-.441-.008-.66-.023,5.822-.911,8.474-6.2,8.474-10.721a14.137,14.137,0,0,0-.575-3.938,8.236,8.236,0,0,1,2.192,5.6,7.353,7.353,0,0,1-1.032,4.427c-.155.212-.069.716.031,1.3a4.532,4.532,0,0,1-.031,2.5,1.923,1.923,0,0,1-1.421.522,6.9,6.9,0,0,1-1.252-.157l-.043-.008a6.4,6.4,0,0,0-1.14-.148,1.727,1.727,0,0,0-.538.075A14.076,14.076,0,0,1,12.474,19.61Z" transform="translate(372 727)" fill="url(#linear-gradient-2)"/>
+    <path id="路径_97" data-name="路径 97" d="M-946.8,4670.687v1.81" transform="translate(1325.103 -3936.699)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="路径_99" data-name="路径 99" d="M-946.8,4670.687v1.81" transform="translate(1330.103 -3936.699)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="路径_100" data-name="路径 100" d="M-947.651,4675.441a7.039,7.039,0,0,0,5.958,0" transform="translate(1325.507 -3937)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

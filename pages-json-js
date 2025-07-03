@@ -1,0 +1,1 @@
+const PagesHomeMoneyLoader = ()=>import('./pages/home/money.vue').then(com => setupPage(com.default || com))
