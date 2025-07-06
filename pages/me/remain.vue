@@ -7,9 +7,9 @@
     </new-nav>
     <scroll-view scroll-y class="tab-con">
       <view class="img-box">
-<view class="text-con">
-0.00
-</view>
+        <view class="text-con">
+          0.00
+        </view>
 
       </view>
     </scroll-view>
@@ -27,10 +27,11 @@
   .img-box {
 
     height: 100%;
-    background: url('/static/me/remain.png') no-repeat center center / cover;
+    background: url('/static/me/remain.png') no-repeat 0 0 / 100% 100%;
     display: flex;
     justify-content: center;
-    .text-con{
+
+    .text-con {
       padding-top: 200rpx;
       font-weight: bold;
       font-size: 88rpx;

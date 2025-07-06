@@ -10,7 +10,52 @@
         <my-img width="378rpx" height="82rpx" src="/static/house/house-one.png"></my-img>
       </view>
       <view class="account-con">
-        <my-img height="352rpx" src="/static/house/house-four.png"></my-img>
+        <view class="bac-img ">
+          <view class="vertical-end">
+            <view class="account-text">余额（元)</view>
+            <my-img v-if="isOpen" width="41rpx" height="25rpx" src="/static/house/eyes-open.png"></my-img>
+            <my-img v-else width="41rpx" height="25rpx" src="/static/house/eyes-close.png"></my-img>
+
+          </view>
+          <view class=" flex-box">
+            <view class="flex-one account-num">
+              ******
+            </view>
+            <view class="flex-one">
+              <uv-button  @click="goTo('/pages/house/verify')" style="height: 70rpx;width: 280rpx;font-size: ;" text="点击登录" color="#174DCE"
+                shape="circle"></uv-button>
+            </view>
+          </view>
+          <view class="flex-box gap-one">
+            <view class="recent">
+              最近缴存（元)
+            </view>
+            <view class="recent">
+              最近提取（元)
+            </view>
+          </view>
+          <view class="gap-two flex-box">
+            <view class="flex-one flex-box">
+              <view class="star-size flex-one">******</view>
+              
+              <uv-icon @click="goTo('/pages/account/all?tabIndex=1')" class="icon-right" name="arrow-right" color="#fff" size="40rpx"></uv-icon>
+            </view>
+
+            <view class="flex-one flex-box">
+             <view class="star-size flex-one">******</view>
+              <uv-icon @click="goTo('/pages/account/all?tabIndex=2')" class="icon-right"  name="arrow-right" color="#fff" size="40rpx"></uv-icon>
+            </view>
+          </view>
+          <view class="flex-box">
+            <view class="flex-one flex-box">
+             <view class="star-size ">---</view>
+            </view>
+
+            <view class="flex-one flex-box">
+              <view class="star-size">---</view>
+            </view>
+          </view>
+        </view>
       </view>
       <view class="title-area flex-center">
         <view class="border"></view>
@@ -18,12 +63,12 @@
       </view>
       <view class="account-area  flex-center">
         <view class="img-width" @click="goTo('/pages/house/verify')">
-          <my-img  height="96rpx" src="/static/house/account-one.png"></my-img>
+          <my-img height="96rpx" src="/static/house/account-one.png"></my-img>
           <view class="text-area">账户信息
           </view>
         </view>
-        <view class="img-width">
-          <my-img  height="96rpx"  src="/static/house/accoun-two.png"></my-img>
+        <view class="img-width"  @click="goTo('/pages/account/info')">
+          <my-img height="96rpx" src="/static/house/accoun-two.png"></my-img>
           <view class="text-area">个税抵扣
           </view>
         </view>
@@ -68,42 +113,73 @@
 
 <script setup>
 import { ref } from 'vue'
-import {
-  onShow, onLoad
-} from '@dcloudio/uni-app'
+
 import glbFunc from '/utils/globalFunc'
 const { goTo } = glbFunc()
 const currentTab = ref(0)
-onLoad(() => {
-  uni.hideTabBar({
-    animation: false,
-    fail: () => {
-      // 捕获报错
-    }
-  });
-})
-
-onShow(() => {
-  currentTab.value = 0
-})
+const isOpen = ref(false)
 </script>
 
 <style lang="scss" scoped>
 $pad: 30rpx;
 
+:deep(.uv-button__text) {
+  font-size: 26rpx !important;
+}
+
 .box-container {
   padding-top: var(--nav-top);
   height: calc(100% - var(--global-tab-height));
-
   background: #fff;
   position: relative;
+
   /* 设置容器为相对定位 */
+  .gap-one {
+    margin-top: 48rpx;
+  }
+
+  .gap-two {
+    margin: 27rpx 0;
+  }
 
   .down-area {
     padding: 0 $pad;
 
     .account-con {
       padding: 34rpx 0 62rpx 0;
+
+      .bac-img {
+        view {
+          color: #fff;
+        }
+
+        padding: 33rpx 50rpx 33rpx 33rpx;
+        background: url('/static/house/house-bac.png') no-repeat 0 0 / 100% 100%;
+      }
+
+      .star-size {
+        font-size: 19rpx;
+      }
+      .icon-right{
+        padding-right: 60rpx;
+      }
+
+      .account-text {
+        font-size: 26rpx;
+
+        margin-right: 70rpx;
+      }
+
+      .account-num {
+        font-size: 32rpx;
+        font-weight: bold;
+        margin-top: 15rpx;
+      }
+
+      .recent {
+        width: 50%;
+        font-size: 23rpx;
+      }
     }
 
     .more {
@@ -113,11 +189,9 @@ $pad: 30rpx;
   }
 
   .title-area {
-
     color: var(--title-text);
-    font-weight: bold;
-    font-size: 32rpx;
-
+    font-size: 36rpx;
+       
     .border {
       margin-right: 20rpx;
       width: 8rpx;

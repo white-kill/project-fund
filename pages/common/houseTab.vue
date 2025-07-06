@@ -3,7 +3,7 @@
     <uv-tabbar :fixed="false" :value="current" zIndex="9" @change="changeTab">
       <uv-tabbar-item text="首页">
         <template #active-icon>
-          <my-img height="44rpx" width="44rpx" src="/static/house/house-tabone.png"></my-img>
+          <my-img height="44rpx" width="44rpx" src="/static/house/home-light.png"></my-img>
         </template>
         <template #inactive-icon>
           <my-img height="44rpx" width="44rpx" src="/static/house/house-tabone.png"></my-img>
@@ -15,12 +15,12 @@
           <my-img height="44rpx" width="44rpx" src="/static/house/house-tabtwo-light.png"></my-img>
         </template>
         <template #inactive-icon>
-          <my-img height="44rpx" width="44rpx" src="/static/house/house-tabtwo-light.png"></my-img>
+          <my-img height="44rpx" width="44rpx" src="/static/house/operator.png"></my-img>
         </template>
       </uv-tabbar-item>
       <uv-tabbar-item text="我的">
         <template #active-icon>
-           <my-img height="44rpx" width="44rpx" src="/static/house/house-tabthree.png"></my-img>
+           <my-img height="44rpx" width="44rpx" src="/static/house/me-light.png"></my-img>
         </template>
         <template #inactive-icon>
             <my-img height="44rpx" width="44rpx" src="/static/house/house-tabthree.png"></my-img>
@@ -41,7 +41,8 @@ const props = defineProps({
 })
 
 const goTab = (url) => {
-  uni.switchTab({
+  
+  uni.redirectTo({
     url: url,
   })
 }

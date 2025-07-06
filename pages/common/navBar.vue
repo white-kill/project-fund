@@ -5,7 +5,7 @@
   }">
     <view>
       <slot name="left">
-        <uv-icon @click="backOne" name="arrow-left" :color="color" size="40rpx"></uv-icon> 
+        <uv-icon  @click="backOne" name="arrow-left" :color="color" size="40rpx"></uv-icon> 
       </slot>
     </view>
     <view class="settings flex-one" :style="{
@@ -34,6 +34,7 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
+   
   color: {
     type: String,
     default: '#2B2B2B'

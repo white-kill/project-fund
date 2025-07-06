@@ -10,6 +10,12 @@
         "usingComponents" : true,
         "nvueStyleCompiler" : "uni-app",
         "compilerVersion" : 3,
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+		"runmode": "liberate",
         "splashscreen" : {
             "alwaysShowBeforeRender" : true,
             "waiting" : true,
@@ -18,9 +24,9 @@
         },
         /* 模块配置 */
         "modules" : {
-            "FacialRecognitionVerify" : {},
             "Camera" : {},
-            "Barcode" : {}
+            "Barcode" : {},
+            "LivePusher" : {}
         },
         /* 应用发布信息 */
         "distribute" : {

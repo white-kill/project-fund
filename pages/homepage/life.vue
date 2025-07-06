@@ -10,6 +10,10 @@
       <ice-img src="/static/homeIcon/online.png"></ice-img>
       <ice-img src="/static/homeIcon/online-two.png"></ice-img>
       <ice-img src="/static/homeIcon/online-three.png"></ice-img>
+      <view class="btn-con">
+     <uv-button  text="立即缴费" 
+                shape="circle" color="#1678FF"></uv-button>
+      </view>
 
     </scroll-view>
 
@@ -26,6 +30,9 @@ const { onScroll, opacitys } = useNavScroll()
 .box-container {
   background: linear-gradient(to right, #EAF3FF 10%, #D4E4FF 50%);
   padding-bottom: 0;
-
+.btn-con{
+  padding: 24rpx;
+  background: #fff;
+}
 }
 </style>

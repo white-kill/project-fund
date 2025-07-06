@@ -24,7 +24,7 @@
 </template>
 <script setup>
 import {
-  onShow, onLoad
+  onShow, onLoad,onHide
 } from '@dcloudio/uni-app'
 import { ref } from 'vue'
 const currentTab = ref(2)
@@ -36,6 +36,7 @@ onLoad(() => {
     }
   });
 })
+
 onShow(() => {
   currentTab.value = 2
 })

@@ -82,7 +82,7 @@ const goNext = () => {
 
 }
 const onInputChange = (e) => {
-	console.log(e)
+
 	// 如果输入框有内容，解除禁用状态
 	isDisabled.value = e === ''
 }

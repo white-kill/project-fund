@@ -43,7 +43,7 @@
 
         </template>
         <template #inactive-icon>
-          <my-img height="42rpx" width="42rpx" src="/static/tab/tab-seven.png"></my-img>
+          <my-img height="42rpx" width="42rpx" src="/static/tab/me-tab.png"></my-img>
 
         </template>
       </uv-tabbar-item>
@@ -77,6 +77,7 @@ const changeTab = (e) => {
       goTab('/pages/home/money')
       break
     case 2:
+ 
       goTab('/pages/home/video')
       break
     case 3:

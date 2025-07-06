@@ -28,21 +28,14 @@
 </template>
 
 <script setup>
-import { onMounted,ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
-onMounted(() => {
- 
-})
- let APPCODE = '_UNI_B051BB1'
-const msg = ref('logs') 
+const msg = ref('logs')
 const submit = () => {
-  
+ uni.redirectTo({
+  url : '/pages/house/faceLogo'
+ })
 }
-
-
-
-
-
 
 </script>
 

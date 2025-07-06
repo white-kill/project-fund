@@ -4,7 +4,7 @@
       <view class="nav flex-center nav-pad">
         <my-img class="me-right" src="/static/house/left-white.png" width="14rpx" height="32rpx"></my-img>
         <uv-text text="我的账户" color="#fff" size="36rpx"></uv-text>
-        <my-img class="me-right" height="62rpx" width="62rpx" src="/static/house/star.png"></my-img>
+        <my-img class="me-right" height="56rpx" width="56rpx" src="/static/house/star.png"></my-img>
         <my-img height="56rpx" width="136rpx" src="/static/house/circle.png"></my-img>
       </view>
     </view>
@@ -150,8 +150,7 @@ onShow(() => {
   .header {
     padding-top: var(--nav-top);
     padding-bottom: 20rpx;
-    background: url('/static/house/bac-me.png') no-repeat center center / cover;
-
+    background: url('/static/house/bac-me.png') no-repeat 0 0 / 100% 100%;
     .nav {
       display: flex;
       justify-content: space-between;
@@ -170,7 +169,7 @@ onShow(() => {
 }
 
 .grid-con {
-  padding: 0 50rpx 50rpx 50rpx;
+  padding: 0 50rpx 30rpx 50rpx;
 
   .grid-item {
     width: 180rpx;

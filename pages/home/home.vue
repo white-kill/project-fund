@@ -1,15 +1,15 @@
 <template>
   <view class="box-container">
-    <view class="home-nav" >
-      <view class="global-flex">
-        <view style="color: #fff;">合肥</view>
+    <view class="nav-title" style="background-color: #1677FF;;">
+      <view  class="global-flex">
+        <view style="color: #fff;width: 80rpx">合肥</view>
         <my-search :is-blue="false" v-model="searchValue" @click="goNext" isReadonly></my-search>
         <my-img src="/static/home/plus.png" height="48rpx" width="48rpx"></my-img>
       </view>
     </view>
     <scroll-view scroll-y class="tab-con">
-      <view class="tab-con-item">
-        <view class="money-one ">
+      <view>
+        <view class="money-one " style="background-color: #1677FF;">
           <view class="price-area flex-center">
             <view class="item-area column-center" @click="scanCode">
               <my-img class="img-bot" width="60rpx" height="60rpx" src="/static/home/scan.png"></my-img>
@@ -31,7 +31,7 @@
 
           </view>
         </view>
-        <view class="icon-area icon-top">
+        <view class="icon-area ">
           <view class="flex-box icon-bot">
             <view class="icon-con " @click="goTo('/pages/homepage/transfer')">
               <my-img src="/static/homeIcon/acconut.png" height="60rpx" width="60rpx"></my-img>
@@ -41,9 +41,9 @@
               <my-img src="/static/homeIcon/yuebao.png" height="60rpx" width="60rpx"></my-img>
               余额宝
             </view>
-            <view class="icon-con " @click="goTo('/pages/homepage/school')">
-              <my-img src="/static/homeIcon/scroll.png" height="60rpx" width="60rpx"></my-img>
-              校园派
+            <view class="icon-con " @click="goTo('/pages/me/welfare')">
+              <my-img src="/static/me/welfare.png" height="60rpx" width="60rpx"></my-img>
+              支付宝公益
             </view>
             <view class="icon-con " @click="goTo('/pages/me/bank')">
               <my-img src="/static/homeIcon/bank.png" height="60rpx" width="60rpx"></my-img>
@@ -78,13 +78,11 @@
           </view>
         </view>
         <view class="my-apply">
-          <my-img  src="/static/homeIcon/house.png" height="176rpx"></my-img>
-          <ice-img src="/static/home/shouye.svg"  ></ice-img>
-
+          <my-img src="/static/homeIcon/house.png" height="176rpx"></my-img>
+          <ice-img src="/static/home/shouye.svg"></ice-img>
+          <view style="height: 50rpx;"></view>
         </view>
       </view>
-
-
     </scroll-view>
   </view>
   <my-tab :current="currentTab"></my-tab>
@@ -134,11 +132,8 @@ onShow(() => {
 .box-container {
   height: calc(100% - var(--global-tab-height));
   padding-bottom: 0;
-  background: #1677FF;
 
-  .icon-top {
-    margin-top: 24rpx;
-  }
+ 
 
   .icon-bot {
     margin-bottom: 50rpx;
@@ -161,13 +156,14 @@ onShow(() => {
       flex-direction: column;
       font-size: 24rpx;
       align-items: center;
-     uni-view{
-      margin-bottom: 12rpx;
-     }
+
+      uni-view {
+        margin-bottom: 12rpx;
+      }
     }
   }
 
- 
+
 
   .tab-con {
     height: calc(100% - 72rpx);
@@ -200,7 +196,7 @@ onShow(() => {
   .money-one {
     padding-left: 24rpx;
     padding-right: 24rpx;
-
+    padding-bottom: 24rpx;
 
     .price-area {
       padding-top: 40rpx;

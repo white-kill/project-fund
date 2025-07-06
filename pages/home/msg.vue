@@ -48,8 +48,7 @@ onShow(() => {
 <style lang="scss" scoped>
 .box-container {
   height: calc(100% - var(--global-tab-height));
-  background: url('/static/apply/apply-bac.jpg') no-repeat center center / cover;
-
+  background: url('/static/apply/apply-bac.jpg') no-repeat 0 0 / 100% 100%;
   .msg-con {
     padding: 0 24rpx;
 

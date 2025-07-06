@@ -20,20 +20,22 @@
 				</view>
 			</view>
 			<view style="width: 100%;">
-				<uni-easyinput @focus="open" :adjust-position="false" :passwordIcon=false :type="isPsd ? 'password' :'text'" placeholder="请输入登录密码" v-model="psdValue" @input="onInputChange">
-				<template v-slot:right>
+				<uni-easyinput @focus="open" :adjust-position="false" :passwordIcon=false
+					:type="isPsd ? 'password' : 'text'" placeholder="请输入登录密码" v-model="psdValue" @input="onInputChange">
+					<template v-slot:right>
 						<view class="global-flex psd-input">
-							<uv-image v-if="!isPsd" src='/static/login/light.png' @click="touchPsd"  width="34rpx"
+							<uv-image v-if="!isPsd" src='/static/login/light.png' @click="touchPsd" width="34rpx"
 								height="26rpx"></uv-image>
-									<uv-image v-else src='/static/image/psd-eyes.png'  @click="touchPsd" mode="aspectFit" width="28rpx"
-								height="14rpx"></uv-image>
-								<uv-image class="psd-img"  src="/static/login/psd-line.png" width="2rpx" height="28rpx"></uv-image>
+							<uv-image v-else src='/static/image/psd-eyes.png' @click="touchPsd" mode="aspectFit"
+								width="28rpx" height="14rpx"></uv-image>
+							<uv-image class="psd-img" src="/static/login/psd-line.png" width="2rpx"
+								height="28rpx"></uv-image>
 							忘记密码
 						</view>
 
 					</template>
 				</uni-easyinput>
-		
+
 				<view class="btn-area">
 					<uv-button :disabled="!psdValue" @click="goNext" shape="circle"
 						:color="isDisabled ? color1 : color2" text="登录"></uv-button>
@@ -48,18 +50,20 @@
 		<uv-popup ref="popup" mode="bottom" round="40rpx">
 			<view style="height: 1000rpx;" class="box-con popup-con">
 				<view style="width: 100%;">
-				<uni-easyinput ref="myInput"  :passwordIcon=false :type="isPsd ? 'password' :'text'" placeholder="请输入登录密码" v-model="psdValue" @input="onInputChange">
+					<uni-easyinput ref="myInput" :passwordIcon=false :type="isPsd ? 'password' : 'text'"
+						placeholder="请输入登录密码" v-model="psdValue" @input="onInputChange">
 						<template v-slot:right>
-						<view class="global-flex psd-input">
-							<uv-image v-if="!isPsd" src='/static/login/light.png' @click="touchPsd"  width="34rpx"
-								height="26rpx"></uv-image>
-									<uv-image v-else src='/static/image/psd-eyes.png'  @click="touchPsd" mode="aspectFit" width="28rpx"
-								height="14rpx"></uv-image>
-								<uv-image class="psd-img"  src="/static/login/psd-line.png" width="2rpx" height="28rpx"></uv-image>
-							忘记密码
-						</view>
+							<view class="global-flex psd-input">
+								<uv-image v-if="!isPsd" src='/static/login/light.png' @click="touchPsd" width="34rpx"
+									height="26rpx"></uv-image>
+								<uv-image v-else src='/static/image/psd-eyes.png' @click="touchPsd" mode="aspectFit"
+									width="28rpx" height="14rpx"></uv-image>
+								<uv-image class="psd-img" src="/static/login/psd-line.png" width="2rpx"
+									height="28rpx"></uv-image>
+								忘记密码
+							</view>
 
-					</template>
+						</template>
 					</uni-easyinput>
 				</view>
 				<view class="btn-area flex-one" style="width: 100%;">
@@ -68,7 +72,7 @@
 				</view>
 				<view class="global-flex  more">
 					更多选项
-					
+
 				</view>
 
 			</view>
@@ -96,7 +100,7 @@ const touchPsd = () => {
 }
 const goNext = () => {
 	if (!isDisabled.value) {
-		uni.switchTab({
+		uni.relaunch({
 			url: '/pages/home/home'
 		})
 	}
@@ -109,11 +113,13 @@ const onInputChange = (e) => {
 <style lang="scss" scoped>
 :deep(.is-input-border) {
 	border-radius: 50rpx;
-	padding: 0 30rpx 0 20rpx ;
+	padding: 0 30rpx 0 20rpx;
 }
-.popup-con{
+
+.popup-con {
 	margin-top: 40rpx;
 }
+
 .psd-input {
 	.psd-img {
 		margin: 0 24rpx;
@@ -143,8 +149,8 @@ const onInputChange = (e) => {
 		padding-bottom: 60rpx;
 
 		.phone {
-
-			font-size: 38rpx;
+			font-weight: bold; 
+			font-size: 52rpx;
 			color: #2B2B2B;
 			margin-left: 24rpx;
 		}

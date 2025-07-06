@@ -1,6 +1,13 @@
+// /* 在App.vue的style标签中 */
 // @font-face {
-//  font-family: PingFang SC;
-//   src: url("PingFang SC Regular.ttf");
+//   font-family: 'PingFang';
 //   font-weight: normal;
-//   font-style: normal;
+//   src: url('/styles/font/PingFangSC-Regular.woff2')  format('woff2');
 // }
+
+// @font-face {
+//   font-family: 'PingFang';
+//   font-weight: bold; /* 粗体 */
+//   src: url('/styles/font/PingFangSC-Semibold.woff2')  format('woff2');
+// }
+

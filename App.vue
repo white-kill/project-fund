@@ -3,8 +3,8 @@ export default {
 
 	onLaunch: function () {
 
-	},
-	onShow: function () {
+	},  
+	onShow: function () {	
 		uni.hideTabBar({
 			animation: false,
 			fail: () => {

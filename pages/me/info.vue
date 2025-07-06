@@ -74,6 +74,8 @@
 </template>
 
 <script setup>
+import rightImg from '/pages/common/right.vue'
+
 import glbfunc from '/utils/globalFunc.js'
 const { backOne } = glbfunc()
 </script>

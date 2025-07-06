@@ -1,6 +1,6 @@
 <template>
   <view class="box-container">
-    <view class="home-nav">
+    <view class="nav-title">
       <view class="global-flex">
         <my-img src="/static/money/nav-left.svg" height="54rpx" width="54rpx"></my-img>
         <my-search placeholder="我的基金" :is-blue="false" v-model="searchValue" @click="goNext" isReadonly></my-search>

@@ -5,10 +5,10 @@ import myTab from '/pages/common/tabbar.vue'
 import myImg from '/pages/common/image.vue'
 import mySearch from '/pages/common/input.vue'
 import myField from '/pages/common/field.vue'
-import rightImg from '/pages/common/right.vue'
 import newNav from '/pages/common/navBar.vue'
 import houseTab from '/pages/common/houseTab.vue'
 import iceImg from '/pages/common/img.vue'
+import myLine from '/pages/common/line.vue'
 
 // import store from '/store/index.js''
 // #ifndef VUE3
@@ -30,10 +30,10 @@ export function createApp() {
   app.component('myImg', myImg)
   app.component('mySearch', mySearch)
   app.component('myField', myField)
-  app.component('rightImg', rightImg)
   app.component('newNav', newNav)
   app.component('houseTab', houseTab)
   app.component('iceImg', iceImg)
+  app.component('myLine', myLine)
 
   return {
     app

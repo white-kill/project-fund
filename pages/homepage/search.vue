@@ -64,7 +64,7 @@ function handleInput(e) {
 $margin: 14rpx;
 
 .box-container {
-    background: url('/static/apply/apply-bac.jpg') no-repeat center center / cover;
+    background: url('/static/apply/apply-bac.jpg') no-repeat 0 0 / 100% 100%;
 
     .img-right {
         margin-right: 16rpx;
