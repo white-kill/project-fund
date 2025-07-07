@@ -100,7 +100,7 @@ const touchPsd = () => {
 }
 const goNext = () => {
 	if (!isDisabled.value) {
-		uni.relaunch({
+		uni.reLaunch({
 			url: '/pages/home/home'
 		})
 	}

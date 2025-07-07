@@ -1,39 +1,35 @@
 <template>
   <view class="box-container">
     <view class="pushContent">
-      <live-pusher
-        id="pusherId"
-        ref="pusherRef"
-        class="livePusher"
-        aspect="4:3"
-        :whiteness="1"
-        :beauty="1"
-        device-position="front"
-      />
+      <live-pusher id="pusherId" ref="pusherRef" class="livePusher" aspect="4:3" :whiteness="1" :beauty="1"
+        device-position="front" />
       <!-- 原有的图片 -->
-      <cover-image  class="pusherImg" src="/static/house/verify-logo.png" alt=""></cover-image>
+      <cover-image class="pusherImg" :src="img1" alt=""></cover-image>
       <!-- 新增的图片 -->
-      <cover-image @click="backOne" class="newImg" src="/static/house/wrong.png" alt=""></cover-image>
+      <cover-image  @click="backOne" class="newImg" :src="img2" alt=""></cover-image>
     </view>
   </view>
 </template>
 
 <script setup>
-import { onMounted, ref, getCurrentInstance,onBeforeUnmount } from 'vue';
+import { onMounted, ref, getCurrentInstance, onBeforeUnmount } from 'vue';
+import img1 from '/static/house/verify-Logo.png'
+import img2 from '/static/house/wrong.png'
+
+
 import glbFunc from '/utils/globalFunc.js'
-const {backOne,goTo} = glbFunc()
+const { backOne, goTo } = glbFunc()
 const pusherRef = ref();
 // 1. 定义定时器 ID（使用 ref 响应式变量）
 const timer = ref(null);
-const delay = 3000; 
+const delay = 3000;
 const targetPage = '/pages/house/success'; // 目标页面路径
 
 onMounted(() => {
   const instance = getCurrentInstance();
   const pusherContext = uni.createLivePusherContext('pusherId', instance.ctx);
   pusherContext.switchCamera();
-  // pusherContext.startPreview({}) // nvue 页面吊起摄像头
-    timer.value = setTimeout(() => {
+  timer.value = setTimeout(() => {
     uni.redirectTo({ url: targetPage });
   }, delay);
 })
@@ -61,6 +57,7 @@ onBeforeUnmount(() => {
   .livePusher {
     width: 800rpx;
     height: 800rpx;
+    position: relative;
   }
 
   .pusherImg {
@@ -72,6 +69,8 @@ onBeforeUnmount(() => {
     width: 100%;
     height: 100%;
     object-fit: fill;
+    z-index: 100; // 确保图片在最上层
+
   }
 
   // 新增图片的样式
@@ -81,7 +80,7 @@ onBeforeUnmount(() => {
     left: 20rpx; // 距离左边的距离
     width: 100rpx; // 图片的宽度
     height: 100rpx; // 图片的高度
-    z-index: 10; // 确保图片在最上层
+    z-index: 100; // 确保图片在最上层
   }
 }
 </style>

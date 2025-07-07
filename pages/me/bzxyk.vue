@@ -5,12 +5,9 @@
         <my-img src="/static/me/slh.png" height="18rpx" width="38rpx"></my-img>
       </template>
     </new-nav>
-    <scroll-view scroll-y class="tab-con">
-      <view style="height: 100%;">
+    <view class="tab-con">     
       <ice-img src="/static/me/bzxyk.png" />
-
-      </view>
-    </scroll-view>
+    </view>
   </view>
 </template>
 
@@ -20,6 +17,7 @@
 
 <style lang="scss" scoped>
 .box-container {
+  overflow: hidden;
   background: #EAF4FE
 
 }

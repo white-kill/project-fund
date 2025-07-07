@@ -41,7 +41,7 @@ onMounted(() => {
 // 3. 清理定时器（页面卸载前）
 onBeforeUnmount(() => {
   if (timer.value) {
-    clearTimeout(timer.value);
+    clearInterval(timer.value);
     timer.value = null;
   }
 });

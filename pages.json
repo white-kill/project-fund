@@ -9,14 +9,6 @@
 			}
 		},
 		{
-			"path": "pages/homepage/search",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
 			"path": "pages/login/index",
 			"style": {
 				"navigationBarTitleText": "",
@@ -24,6 +16,16 @@
 				"navigationStyle": "custom"
 			}
 		},
+		
+		{
+			"path": "pages/homepage/search",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		
 		{
 			"path": "pages/homepage/application",
 			"style": {
