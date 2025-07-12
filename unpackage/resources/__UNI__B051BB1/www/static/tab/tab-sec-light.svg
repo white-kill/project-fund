@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.848" y1="0.078" x2="0.156" y2="0.846" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b63fe"/>
+      <stop offset="1" stop-color="#00baff"/>
+    </linearGradient>
+  </defs>
+  <g id="组_109" data-name="组 109" transform="translate(-20276 -734)">
+    <path id="路径_93" data-name="路径 93" d="M11,0A11,11,0,1,1,0,11,11,11,0,0,1,11,0Z" transform="translate(20276 734)" fill="url(#linear-gradient)"/>
+    <g id="组_55" data-name="组 55" transform="translate(20028.426 80.153)">
+      <g id="组_54" data-name="组 54" transform="translate(26.254)">
+        <path id="路径_72" data-name="路径 72" d="M-435.172,4619.049l2.406,2.516,2.688-2.516" transform="translate(665 -3959)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="直线_34" data-name="直线 34" x2="7.141" transform="translate(228.75 663.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="直线_35" data-name="直线 35" x2="7.141" transform="translate(228.75 666.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="直线_36" data-name="直线 36" y2="6.146" transform="translate(232.5 663.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

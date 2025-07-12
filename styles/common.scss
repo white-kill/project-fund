@@ -1,0 +1,167 @@
+/*每个页面公共css */
+@import '@/uni_modules/uv-ui-tools/index.scss';
+@import "/styles/font/font.scss";
+
+$btn-height: 100rpx;
+
+uni-app,
+uni-page,
+uni-page-wrapper,
+uni-page-body {
+  height: 100%;
+  font-family: PingFang;
+}
+
+
+.uni-navbar__header {
+  padding: 0 !important;
+}
+
+
+view {
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #232323
+}
+
+scroll-view {
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  font-family: PingFang;
+}
+
+.uni-dialog-content-text {
+  text-align: center;
+}
+
+.uni-select__selector-item {
+  font-size: 24rpx !important;
+}
+
+.global-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify-center { 
+  flex:1;
+  display: flex;
+  justify-content: center;
+}
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: PingFang;
+}
+
+.btn-padding {
+  padding: 0 30rpx;
+}
+
+
+.box-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 ;
+}
+
+.nav-title {
+  height:var(--nav-height);
+  padding: var(--nav-top) 32rpx 0 32rpx;
+}
+.home-nav {
+   height:var(--nav-height);
+  padding: var(--nav-top) 0 0 0;
+}
+
+.global-padding {
+  margin: 0 20rpx;
+}
+
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vertical-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-one {
+  flex: 1
+}
+
+
+.flex-box {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-tab {
+  padding-bottom: 0;
+}
+
+.uni-navbar__header-btns {
+  width: 200rpx !important;
+}
+
+.my-con {
+  height: calc(100% - 72rpx);
+}
+
+.img-gap {
+  margin-top: 16rpx;
+}
+
+.tab-con {
+  height: calc(100% - var(--nav-height));
+}
+
+.ice-search {
+  .uv-input--circle {
+    background: #fff !important
+  }
+}
+
+.scroll-height {
+  height: 100%
+}
+
+.global-margin {
+  margin: 24rpx 0;
+}
+.gloabl-gap{
+  margin:0 24rpx;
+}
+.me-right {
+  margin: 0 24rpx 0 12rpx
+}
+
+.uv-button__text {
+  font-size: 32rpx !important;
+}
+
+.uv-button--square {
+  height: $btn-height !important;
+}
+
+.uv-button--hairline {
+  height: $btn-height !important;
+
+}
+
