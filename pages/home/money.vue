@@ -1,6 +1,6 @@
 <template>
   <view class="box-container">
-    <view class="nav-title">
+    <view class="nav-title" style="background: #1677FF;">
       <view class="global-flex">
         <my-img src="/static/money/nav-left.svg" height="54rpx" width="54rpx"></my-img>
         <my-search placeholder="我的基金" :is-blue="false" v-model="searchValue" @click="goNext" isReadonly></my-search>
@@ -50,7 +50,6 @@ onShow(() => {
   height: calc(100% - var(--global-tab-height));
   padding-top: 0;
   padding-bottom: 0;
-  background: #1677FF;
   // background: linear-gradient(to right, #2C9EFE, #208AFE, #026AFD, );
 
 

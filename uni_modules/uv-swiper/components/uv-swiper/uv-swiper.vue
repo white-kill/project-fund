@@ -216,7 +216,7 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		overflow: hidden;
+	
 
 		&__wrapper {
 			flex: 1;
@@ -227,7 +227,7 @@
 				&__wrapper {
 					@include flex;
 					position: relative;
-					overflow: hidden;
+					
 					transition: transform 0.3s;
 					flex: 1;
 
@@ -257,7 +257,7 @@
 
 		&__indicator {
 			position: absolute;
-			bottom: 10px;
+			bottom: 10px;		
 		}
 	}
 </style>

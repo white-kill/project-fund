@@ -12,5 +12,7 @@
 </template>
 <script setup></script>
 <style lang="scss" scoped>
-
+.box-container{
+  overflow: hidden;
+}
 </style>

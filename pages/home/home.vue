@@ -1,7 +1,7 @@
 <template>
   <view class="box-container">
     <view class="nav-title" style="background-color: #1677FF;;">
-      <view  class="global-flex">
+      <view class="global-flex">
         <view style="color: #fff;width: 80rpx">合肥</view>
         <my-search :is-blue="false" v-model="searchValue" @click="goNext" isReadonly></my-search>
         <my-img src="/static/home/plus.png" height="48rpx" width="48rpx"></my-img>
@@ -78,7 +78,7 @@
           </view>
         </view>
         <view class="my-apply">
-          <my-img src="/static/homeIcon/house.png" height="176rpx"></my-img>
+          <my-img src="/static/homeIcon/house.png"  @click="goTo('/pages/house/account')" height="176rpx"></my-img>
           <ice-img src="/static/home/shouye.svg"></ice-img>
           <view style="height: 50rpx;"></view>
         </view>
@@ -89,14 +89,30 @@
 
 </template>
 <script setup>
+import glbPermission from '@/js_sdk/wa-permission/permission'
 
 import {
   onShow, onLoad
 } from '@dcloudio/uni-app'
 import { ref } from 'vue'
 import glbFunc from '@/utils/globalFunc.js'
+const { requestAndroidPermission, judgeIosPermission } = glbPermission()
+//获取安卓权限
+const requestAndroidPermissions = async (permisionID) => {
+  await requestAndroidPermission(permisionID)
+}
+const isIos = ref(true)
+
 const { goTo } = glbFunc()
 onLoad(() => {
+  // #ifdef APP-PLUS
+  isIos.value = plus.os.name === 'iOS'
+  if (!isIos.value) {
+    requestAndroidPermissions('android.permission.CAMERA')
+  } else {
+    judgeIosPermission('camera')
+  }
+  // #endif
   uni.hideTabBar({
     animation: false,
     fail: () => {
@@ -134,7 +150,7 @@ onShow(() => {
   height: calc(100% - var(--global-tab-height));
   padding-bottom: 0;
 
- 
+
 
   .icon-bot {
     margin-bottom: 50rpx;
