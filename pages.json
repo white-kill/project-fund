@@ -306,6 +306,7 @@
 				"navigationStyle": "custom"
 			}
 		},
+		
 		{
 			"path": "pages/house/success",
 			"style": {

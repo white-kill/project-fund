@@ -91,7 +91,7 @@ $eight: 16rpx;
   padding-bottom: var(--box-bot);
 
   .tab-con {
-    height: calc(100% - 72rpx);
+    // height: calc(100% - 72rpx);
   }
 
   background: url('/static/apply/apply-bac.jpg') no-repeat 0 0 / 100% 100%;

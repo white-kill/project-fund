@@ -1,6 +1,6 @@
 <template>
   <view class="box-container">
-    <view class="nav-title" style="background-color: #1677FF;;">
+    <view class="nav-title flex-center" style="background-color: #1677FF;">
       <view class="global-flex">
         <view style="color: #fff;width: 80rpx">合肥</view>
         <my-search :is-blue="false" v-model="searchValue" @click="goNext" isReadonly></my-search>
@@ -183,7 +183,7 @@ onShow(() => {
 
 
   .tab-con {
-    height: calc(100% - 72rpx);
+    // height: calc(100% - 72rpx);
 
     .tab-con-item {
       display: flex;

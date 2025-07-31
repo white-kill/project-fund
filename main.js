@@ -9,7 +9,6 @@ import newNav from '/pages/common/navBar.vue'
 import houseTab from '/pages/common/houseTab.vue'
 import iceImg from '/pages/common/img.vue'
 import myLine from '/pages/common/line.vue'
-
 // import store from '/store/index.js''
 // #ifndef VUE3
 import Vue from 'vue'
@@ -34,7 +33,6 @@ export function createApp() {
   app.component('houseTab', houseTab)
   app.component('iceImg', iceImg)
   app.component('myLine', myLine)
-
   return {
     app
   }
