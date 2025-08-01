@@ -43,8 +43,20 @@ import {
 } from '@dcloudio/uni-app'
 import img1 from '/static/video/swiper-one.png'
 import img2 from '/static/video/swiper-two.png'
-
+import { onMounted } from 'vue'
 import { ref } from 'vue'
+// 在页面中导入并使用
+import { setPageTheme, applyThemePreset } from '@/utils/virtualKeyUtils.js'
+
+onMounted(() => {
+  // 设置自定义主题
+  setPageTheme({
+    backgroundColor: '#1A1A1A',
+    statusBarStyle: 'light',
+    lightNavigationBar: true
+  })
+
+})
 const currentTab = ref(2)
 const myList = ref([img1, img2])
 
@@ -59,12 +71,7 @@ onLoad(() => {
 })
 const current = ref(0)
 onShow(() => {
- 
-  // #ifdef APP-PLUS
-  plus.navigator.setStatusBarBackground('#1A1C29')
-  // #endif
   currentTab.value = 2
-
 })
 
 const list = [{

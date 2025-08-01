@@ -22,7 +22,7 @@
 			"path": "pages/home/money"
 		},
 		{
-			"path": "pages/home/video"
+			"path": "pages/home/video"		
 		},
 		{
 			"path": "pages/login/psd"
