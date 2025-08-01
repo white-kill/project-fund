@@ -1,8 +1,8 @@
 <template>
-  <uv-image :src="src" :width="width" :height="height" :mode="mode"></uv-image>
+  <image :style="{height:height,width:width}" :src="src" :mode="mode"></image>
 </template>
 
-<script setup>
+<script setup> 
 const props = defineProps({
   src: {
     type: String,

@@ -1,354 +1,173 @@
 {
 	"pages": [
 		{
-			"path": "pages/home/home",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/home/home"
 		},
 		{
-			"path": "pages/login/index",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
-		},
-		
-		{
-			"path": "pages/homepage/search",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
-		},
-		
-		{
-			"path": "pages/homepage/application",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/login/index"
 		},
 		{
-			"path": "pages/home/me",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/search"
 		},
 		{
-			"path": "pages/home/msg",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/application"
 		},
 		{
-			"path": "pages/home/money",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/home/me"
 		},
 		{
-			"path": "pages/home/video",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/home/msg"
 		},
 		{
-			"path": "pages/login/psd",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/home/money"
 		},
 		{
-			"path": "pages/me/balance",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/home/video"
 		},
 		{
-			"path": "pages/me/settings",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/login/psd"
 		},
 		{
-			"path": "pages/me/info",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/balance"
 		},
 		{
-			"path": "pages/me/welfare",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/settings"
 		},
 		{
-			"path": "pages/house/index",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/info"
 		},
 		{
-			"path": "pages/house/account",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/welfare"
 		},
 		{
-			"path": "pages/house/verify",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/index"
 		},
 		{
-			"path": "pages/house/server",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/account"
 		},
 		{
-			"path": "pages/house/me",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/verify"
 		},
 		{
-			"path": "pages/homepage/money",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/server"
 		},
 		{
-			"path": "pages/homepage/location",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/me"
 		},
 		{
-			"path": "pages/homepage/card",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/money"
 		},
 		{
-			"path": "pages/homepage/transfer",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/location"
 		},
 		{
-			"path": "pages/homepage/credict",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/card"
 		},
 		{
-			"path": "pages/homepage/mobile",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/transfer"
 		},
 		{
-			"path": "pages/homepage/life",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/credict"
 		},
 		{
-			"path": "pages/homepage/little",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/mobile"
 		},
 		{
-			"path": "pages/me/bank",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/life"
 		},
 		{
-			"path": "pages/me/remain",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/little"
 		},
 		{
-			"path": "pages/me/tokio",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/bank"
 		},
 		{
-			"path": "pages/me/ant",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/remain"
 		},
 		{
-			"path": "pages/me/member",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/tokio"
 		},
 		{
-			"path": "pages/me/price",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/ant"
 		},
 		{
-			"path": "pages/me/bankCard",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/member"
 		},
 		{
-			"path": "pages/homepage/trust",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/price"
 		},
 		{
-			"path": "pages/me/jiebei",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/bankCard"
 		},
 		{
-			"path": "pages/me/wsd",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/homepage/trust"
 		},
 		{
-			"path": "pages/me/bzxyk",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/jiebei"
 		},
 		{
-			"path": "pages/house/face",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
-		},
-		
-		{
-			"path": "pages/house/success",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/wsd"
 		},
 		{
-			"path": "pages/house/faceLogo",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/me/bzxyk"
 		},
 		{
-			"path": "pages/account/detail",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/face"
 		},
 		{
-			"path": "pages/account/all",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/success"
 		},
 		{
-			"path": "pages/account/info",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
+			"path": "pages/house/faceLogo"
+		},
+		{
+			"path": "pages/account/detail"
+		},
+		{
+			"path": "pages/account/all"
+		},
+		{
+			"path": "pages/account/info"
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/money",
+			"pages": [
+				{
+					"path": "wdlc"
+				},
+				{
+					"path": "jjlc"
+				},
+				{
+					"path": "jijin"
+				},
+				{
+					"path": "huangjin"
+				},
+				{
+					"path": "gupiao"
+				},
+				{
+					"path": "dingqi"
+				},
+				{
+					"path": "baoxian"
+				},
+				{
+					"path": "ylj"
+				},
+				{
+					"path": "bangnitou"
+				}
+
+			]
 		}
 	],
 	"globalStyle": {
+		"navigationStyle": "custom",
+		"enablePullDownRefresh": false,
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#FFFFFF",
