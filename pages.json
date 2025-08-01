@@ -168,7 +168,7 @@
 	"globalStyle": {
 		"navigationStyle": "custom",
 		"enablePullDownRefresh": false,
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF",

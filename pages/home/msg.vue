@@ -34,6 +34,9 @@ import {
 import { ref } from 'vue'
 const currentTab = ref(3)
 onLoad(() => {
+  uni.setNavigationBarColor({
+    frontColor: '#000000',
+  })
   uni.hideTabBar({
     animation: false,
     fail: () => {
@@ -42,6 +45,7 @@ onLoad(() => {
   });
 })
 onShow(() => {
+
   currentTab.value = 3
 })
 </script>
@@ -49,6 +53,7 @@ onShow(() => {
 .box-container {
   height: calc(100% - var(--global-tab-height));
   background: url('/static/apply/apply-bac.jpg') no-repeat 0 0 / 100% 100%;
+
   .msg-con {
     padding: 0 24rpx;
 

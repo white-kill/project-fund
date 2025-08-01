@@ -71,19 +71,25 @@ const changeTab = (e) => {
   // 页面跳转逻辑
   switch (e) {
     case 0:
+     
       goTab('/pages/home/home')
       break
     case 1:
+    
       goTab('/pages/home/money')
       break
     case 2:
- 
+      // #ifdef APP-PLUS
+      plus.navigator.setStatusBarBackground('#1A1A1A')
+      // #endif
       goTab('/pages/home/video')
       break
     case 3:
+ 
       goTab('/pages/home/msg')
       break
     case 4:
+    
       goTab('/pages/home/me')
       break
   }
@@ -101,3 +107,4 @@ const changeTab = (e) => {
   background-color: #1A1A1A;
 }
 </style>
+

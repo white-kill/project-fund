@@ -18,8 +18,8 @@
     </view>
     <scroll-view scroll-y class="tab-con">
       <view class="swiper-con">
-        <uv-swiper imgMode="widthFix" :indicatorStyle="{'bottom':'-25rpx'}"   @change="e => current = e.current" height="260rpx" radius="10" :list="myList" indicator
-          indicatorMode="line" circular>
+        <uv-swiper imgMode="widthFix" :indicatorStyle="{ 'bottom': '-25rpx' }" @change="e => current = e.current"
+          height="260rpx" radius="10" :list="myList" indicator indicatorMode="line" circular>
           <template #indicator>
             <view class="indicator">
               <view class="indicator__dot" v-for="(item, index) in myList" :key="index"
@@ -46,7 +46,7 @@ import img2 from '/static/video/swiper-two.png'
 
 import { ref } from 'vue'
 const currentTab = ref(2)
-const myList = ref([img1,img2])
+const myList = ref([img1, img2])
 
 onLoad(() => {
   uni.hideTabBar({
@@ -55,11 +55,18 @@ onLoad(() => {
       // 捕获报错
     }
   });
+
 })
 const current = ref(0)
 onShow(() => {
+ 
+  // #ifdef APP-PLUS
+  plus.navigator.setStatusBarBackground('#1A1C29')
+  // #endif
   currentTab.value = 2
+
 })
+
 const list = [{
   name: '关注',
   id: 1
@@ -75,16 +82,15 @@ const list = [{
 }]
 </script>
 <style lang="scss" scoped>
-
 .box-container {
   height: calc(100% - var(--global-tab-height));
   padding-bottom: 0;
   background: linear-gradient(90deg, #1A1C29 0%, #181720 28%, #180D11 54%, #190C13 100%, #190C13 100%);
 
- 
+
 
   .swiper-con {
-    padding:50rpx 16rpx;
+    padding: 50rpx 16rpx;
   }
 
   @mixin flex($direction: row) {

@@ -56,7 +56,7 @@
 
         <my-field url='/static/me/welfare.png' class="field-large field-top" website="/pages/me/welfare" modelValue='公益'
           :isBorder="false"></my-field>
-        <view style="height: 50rpx;"></view>
+
       </view>
     </scroll-view>
   </view>
@@ -72,6 +72,9 @@ const { goTo } = glbFunc()
 import { ref } from 'vue'
 const currentTab = ref(4)
 onLoad(() => {
+  uni.setNavigationBarColor({
+    frontColor: '#000000',
+  })
   uni.hideTabBar({
     animation: false,
     fail: () => {
@@ -88,11 +91,9 @@ $eight: 16rpx;
 
 .box-container {
   height: calc(100% - var(--global-tab-height));
-  padding-bottom: var(--box-bot);
+ 
 
-  .tab-con {
-    // height: calc(100% - 72rpx);
-  }
+ 
 
   background: url('/static/apply/apply-bac.jpg') no-repeat 0 0 / 100% 100%;
 
