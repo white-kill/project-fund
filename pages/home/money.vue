@@ -84,7 +84,7 @@
                   <text>保险</text>
                 </view>
                 <view class="item-icon">
-                  <my-img src="/static/money/ylj.png" width="56rpx" height="53rpx"></my-img>
+                  <my-img  @click="goNext('/pages/money/ylj')" src="/static/money/ylj.png" width="56rpx" height="53rpx"></my-img>
                   <text>养老金</text>
                 </view>
                 <view class="item-icon" @click="goNext('/pages/money/bangnitou')">

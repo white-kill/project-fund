@@ -1,0 +1,31 @@
+.base-layout {
+    height: calc(100% - 1rpx);
+}
+   
+.nav-con {
+    z-index: 99;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    padding-top: var(--status-bar-height, 0px);
+    height: calc(var(--status-bar-height, 0px) + var(--nav-height));
+    transition: background-color 0.3s;
+}
+
+.icon-con {
+    padding-left: 12rpx;
+    padding-right: 12rpx;
+}
+
+.safe-area-top {
+    width: 100%;
+    /* 使用 CSS 变量作为兜底 */
+    height: var(--status-bar-height, 0px);
+}
+
+.safe-area-bottom-filler {
+    width: 100%;
+    /* 使用 CSS 变量作为兜底 */
+    height: var(--safe-area-bottom, 0px);
+}

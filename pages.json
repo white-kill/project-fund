@@ -179,6 +179,7 @@
 	"uniIdRouter": {},
 	"tabBar": {
 		"borderStyle": "none",
+		"backgroundColor": "none",
 		"list": [
 			{
 				"pagePath": "pages/home/home"

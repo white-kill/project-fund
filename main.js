@@ -1,6 +1,6 @@
 import App from './App'
 import '/styles/index.scss'
-
+import myView from '/pages/common/view.vue'
 import myTab from '/pages/common/tabbar.vue'
 import myImg from '/pages/common/image.vue'
 import mySearch from '/pages/common/input.vue'
@@ -33,6 +33,7 @@ export function createApp() {
   app.component('houseTab', houseTab)
   app.component('iceImg', iceImg)
   app.component('myLine', myLine)
+    app.component('myView', myView)
   return {
     app
   }

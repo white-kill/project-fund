@@ -66,24 +66,43 @@ const goTab = (url) => {
     url: url,
   })
 }
-
+// const setSystemNavBar = (backgroundColor, textStyle = 'white') => {
+//   // #ifdef APP-PLUS
+//   // 设置状态栏
+//   plus.navigator.setStatusBarBackground(backgroundColor)
+//   plus.navigator.setStatusBarStyle(textStyle === 'white' ? 'light' : 'dark')
+  
+//   // 设置导航栏颜色（如果支持）
+//   uni.setTabBarStyle({
+//     frontColor: textStyle === 'white' ? '#ffffff' : '#000000',
+//     backgroundColor: backgroundColor,
+//     animation: {
+//       duration: 0  // 设置为0减少延迟
+//     }
+//   })
+//   // #endif
+// }
 const changeTab = (e) => {
   // 页面跳转逻辑
   switch (e) {
     case 0:
+    
       goTab('/pages/home/home')
       break
     case 1:
+   
       goTab('/pages/home/money')
       break
     case 2:
- 
+     
       goTab('/pages/home/video')
       break
     case 3:
+     
       goTab('/pages/home/msg')
       break
     case 4:
+    
       goTab('/pages/home/me')
       break
   }
