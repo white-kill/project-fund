@@ -53,7 +53,7 @@
                   <my-img src="/static/money/yeb.png" width="53rpx" height="56rpx"></my-img>
                   <text>余额宝</text>
                 </view>
-                <view class="item-icon">
+                <view class="item-icon" @click="goNext('/pages/money/wdlc')">
                   <my-img src="/static/money/wdlc.png" width="54rpx" height="58rpx"></my-img>
                   <text>稳健理财</text>
                 </view>
@@ -61,7 +61,7 @@
                   <my-img src="/static/money/jjlc.png" width="53rpx" height="57rpx"></my-img>
                   <text>进阶理财</text>
                 </view>
-                <view class="item-icon">
+                <view class="item-icon" @click="goNext('/pages/money/jijin')">
                   <my-img src="/static/money/jijin.png" width="57rpx" height="51rpx"></my-img>
                   <text>基金</text>
                 </view>
@@ -75,11 +75,11 @@
                   <my-img src="/static/money/gupiao.png" width="54rpx" height="53rpx"></my-img>
                   <text>股票</text>
                 </view>
-                <view class="item-icon">
+                <view class="item-icon" @click="goNext('/pages/money/dingqi')">
                   <my-img src="/static/money/dingwi.png" width="49rpx" height="56rpx"></my-img>
                   <text>定期</text>
                 </view>
-                <view class="item-icon">
+                <view class="item-icon" @click="goNext('/pages/me/ant')">
                   <my-img src="/static/money/baoxian.png" width="58rpx" height="53rpx"></my-img>
                   <text>保险</text>
                 </view>
