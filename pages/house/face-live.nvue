@@ -1,0 +1,182 @@
+<template>
+  <view class="top"></view>
+  <view class="face-container">
+    <!-- 摄像头区域 - 定位到背景图的圆圈内 -->
+    <view class="camera-wrapper">
+      <live-pusher
+        id="livePusher"
+        class="camera-view"
+        mode="SD"
+        :beauty="1"
+        :whiteness="1"
+        aspect="1:1"
+        device-position="front"
+        :muted="true"
+        :enable-camera="true"
+        :auto-focus="true"
+        @statechange="statechange"
+        @error="handleCameraError"
+      ></live-pusher>
+    </view>
+    <!-- 全屏背景图 -->
+    <cover-image
+      class="background-logo"
+      src="/static/house/verify-Logo.png"
+    ></cover-image>
+    <cover-image
+      @click="back"
+      class="newImg"
+      src="/static/house/wrong.png"
+    ></cover-image>
+  </view>
+</template>
+<script>
+let _this = null;
+export default {
+  data() {
+    return {
+      timer: null,
+      poenCarmeInterval: null,
+      message: "", //提示
+      aspect: "2:3", //比例
+      cameraWidth: "", //相机画面宽度
+      cameraHeight: "", //相机画面宽度
+      windowWidth: "", //屏幕可用宽度
+      windowHeight: "", //屏幕可用高度
+      camerastate: false, //相机准备好了
+      livePusher: null, //流视频对象
+      snapshotsrc: null, //快照
+    };
+  },
+  onLoad() {
+    _this = this;
+    this.initCamera();
+  },
+  onUnload() {
+    if (this.timer) {
+      clearTimeout(this.timer);
+      this.timer = null;
+    }
+  },
+  onReady() {
+    this.livePusher = uni.createLivePusherContext("livePusher", this);
+    this.startPreview(); //开启预览并设置摄像头
+    this.poenCarme();
+  },
+  methods: {
+    //轮询打开
+    poenCarme() {
+      //#ifdef APP-PLUS
+      if (plus.os.name == "Android") {
+        if (!_this.camerastate) _this.startPreview();
+      }
+      //#endif
+    },
+    //初始化相机
+    initCamera() {
+      //处理安卓手机异步授权问题
+      uni.getSystemInfo({
+        success: function (res) {
+          _this.windowWidth = res.windowWidth;
+          _this.windowHeight = res.windowHeight;
+          _this.cameraWidth = res.windowWidth;
+          _this.cameraHeight = res.windowWidth * 1.5;
+        },
+      });
+    },
+
+    //开始预览
+    startPreview() {
+      this.livePusher.startPreview({
+        success: (a) => {
+          this.timer = setTimeout(() => {
+            uni.redirectTo({ url: "/pages/house/success" });
+          }, 3000);
+        },
+      });
+    },
+
+    //停止预览
+    stopPreview() {
+      this.livePusher.stopPreview({
+        success: (a) => {
+          _this.camerastate = false; //标记相机未启动
+        },
+      });
+    },
+
+    //状态
+    statechange(e) {
+      //状态改变
+      if (e.detail.code == 1007) {
+        _this.camerastate = true;
+      } else if (e.detail.code == -1301) {
+        _this.camerastate = false;
+      }
+    },
+
+    //返回
+    back() {
+      uni.navigateBack();
+    },
+
+    //抓拍
+    snapshot() {
+      this.livePusher.snapshot({
+        success: (e) => {
+          _this.snapshotsrc = e.message.tempImagePath;
+          console.log(_this.snapshotsrc);
+          _this.stopPreview();
+
+          uni.navigateBack();
+        },
+      });
+    },
+
+    //反转
+    flip() {
+      this.livePusher.switchCamera();
+    },
+  },
+};
+</script>
+<style scoped>
+.top {
+  height: 100rpx;
+}
+.face-container {
+  width: 750rpx;
+  height: 1334rpx;
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+.background-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 1334rpx;
+  z-index: 100;
+}
+
+.camera-wrapper {
+  position: absolute;
+  top: 50rpx;
+  left: 50rpx;
+  width: 600rpx;
+  height: 600rpx;
+  z-index: 100;
+}
+
+.camera-view {
+  width: 500rpx;
+  width: 600rpx;
+  height: 600rpx;
+  background-color: #000000;
+}
+.newImg {
+  width: 100rpx;
+  height: 100rpx;
+}
+</style>

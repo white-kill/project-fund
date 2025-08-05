@@ -1,41 +1,44 @@
 <template>
   <view class="box-container">
     <new-nav title="身份验证"></new-nav>
-      <progress :percent="progress"  />
-      <view class="global-flex">
-        <view class="circle global-flex">
-        <my-img with="50rpx" height="50rpx" src="/static/house/right.png"></my-img>          
-        </view>
+    <progress :percent="progress" />
+    <view class="global-flex">
+      <view class="circle global-flex">
+        <my-img
+          with="50rpx"
+          height="50rpx"
+          src="/static/house/right.png"
+        ></my-img>
       </view>
-        <view class="success">认证成功</view>
-
     </view>
+    <view class="success">认证成功</view>
+  </view>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 // 1. 定义定时器 ID（使用 ref 响应式变量）
 const timer = ref(null);
-const delay = 1000; 
-const targetPage = '/pages/house/account'; // 目标页面路径
+const delay = 1000;
+const targetPage = "/pages/house/account"; // 目标页面路径
 const progress = ref(0);
 // 2. 启动定时器（页面挂载后执行）
-const startProgress=()=> {
-       timer.value = setInterval(() => {
-         progress.value += 35;
-        if ( progress.value >= 100) {
-          clearInterval(timer.value);
-          progress.value = 100;
-          // 页面跳转逻辑
-          uni.redirectTo({
-            url: targetPage
-          });
-        }
-      }, 1000);
+const startProgress = () => {
+  timer.value = setInterval(() => {
+    progress.value += 35;
+    if (progress.value >= 100) {
+      clearInterval(timer.value);
+      progress.value = 100;
+      // 页面跳转逻辑
+      uni.redirectTo({
+        url: targetPage,
+      });
     }
+  }, delay);
+};
 onMounted(() => {
-  startProgress()
+  startProgress();
 });
 
 // 3. 清理定时器（页面卸载前）
@@ -49,14 +52,14 @@ onBeforeUnmount(() => {
 
 <style lang="scss" scoped>
 .box-container {
-  .circle{
+  .circle {
     margin: 300rpx 0 80rpx 0;
     height: 100rpx;
     border-radius: 50%;
     width: 100rpx;
     background: var(--input-border);
   }
-  .success{
+  .success {
     font-weight: bold;
     text-align: center;
     font-size: 36rpx;
@@ -69,7 +72,7 @@ onBeforeUnmount(() => {
     padding: 0 30rpx;
 
     .text-one {
-      color: #2B2B2B;
+      color: #2b2b2b;
     }
 
     .bold-font {

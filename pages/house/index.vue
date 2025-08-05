@@ -1,37 +1,37 @@
 <template>
   <view class="box-container">
-
-    <view  style="height: 100%;overflow: hidden;">
-      <view>
-        <ice-img style="position: relative;" src="/static/house/index-one.png">
-
-        </ice-img>
-        <view @click="backOne" class="icon-area"></view>
-      </view>
-
-      <ice-img src="/static/house/index-two.png" @click="goTo('/pages/house/account')"></ice-img>
-      <ice-img src="/static/house/index-three.png"></ice-img>
-
+    <view class="relative">
+      <my-img height="314rpx" src="/static/house/house-top.png"> </my-img>
+      <overlay
+        width="80"
+        height="50"
+        top="100"
+        left="30"
+        @click="backOne"
+      ></overlay>
     </view>
-
-
+    <scroll-view scroll-y class="scroll-height">
+      <ice-img
+        src="/static/house/house-mid.png"
+        @click="goTo('/pages/house/account')"
+      ></ice-img>
+      <ice-img src="/static/house/house-third.png"></ice-img>
+      <ice-img src="/static/house/house-down.png"></ice-img>
+    </scroll-view>
   </view>
 </template>
 <script setup>
-import glbFunc from '@/utils/globalFunc.js'
-const { goTo, backOne } = glbFunc()
+import glbFunc from "@/utils/globalFunc.js";
+import overlay from "/pages/common/overlay.vue";
 
-
+const { goTo, backOne } = glbFunc();
 </script>
 <style lang="scss" scoped>
 .box-container {
-  background: #F0F3F8;
-  .icon-area {
-    position: absolute;
-    top: 100rpx;
-    width: 80rpx;
-    height: 60rpx;
-
+  background: #f0f3f7;
+  .relative {
+    height: 314rpx;
+    position: relative;
   }
 }
 </style>
