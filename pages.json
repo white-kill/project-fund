@@ -55,30 +55,6 @@
       "path": "pages/house/me"
     },
     {
-      "path": "pages/homepage/money"
-    },
-    {
-      "path": "pages/homepage/location"
-    },
-    {
-      "path": "pages/homepage/card"
-    },
-    {
-      "path": "pages/homepage/transfer"
-    },
-    {
-      "path": "pages/homepage/credict"
-    },
-    {
-      "path": "pages/homepage/mobile"
-    },
-    {
-      "path": "pages/homepage/life"
-    },
-    {
-      "path": "pages/homepage/little"
-    },
-    {
       "path": "pages/me/bank"
     },
     {
@@ -131,6 +107,35 @@
     }
   ],
   "subPackages": [
+    {
+      "root": "pages/homepage",
+      "pages": [
+        {
+          "path": "money"
+        },
+        {
+          "path": "location"
+        },
+        {
+          "path": "card"
+        },
+        {
+          "path": "transfer"
+        },
+        {
+          "path": "credict"
+        },
+        {
+          "path": "mobile"
+        },
+        {
+          "path": "life"
+        },
+        {
+          "path": "little"
+        }
+      ]
+    },
     {
       "root": "pages/money",
       "pages": [

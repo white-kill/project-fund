@@ -24,9 +24,12 @@
         <!-- <my-img src="/static/me/test.png" height="75rpx" width="480rpx"></my-img> -->
 
       </view>
-      <ice-img src="/static/me/tokio-one.png" />
-      <ice-img src="/static/me/tokio-two.png" />
-      <ice-img src="/static/me/tokio-three.png" />
+      <view style="background-color: #F5F5F5">
+        <ice-img src="/static/me/tokio-one.png" />
+        <ice-img src="/static/me/tokio-two.png" />
+        <ice-img src="/static/me/tokio-three.png" />
+      </view>
+
 
 
     </scroll-view>
@@ -64,7 +67,7 @@ const getMounth = computed(() => {
 
   .down {
     font-size: 30rpx;
-   text-align: center;
+    text-align: center;
   }
 
   .down-area {

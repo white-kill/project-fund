@@ -11,10 +11,10 @@
           <view class="flex-one name-con">
             <view class="name-top">张三丰</view>
             <view class="flex-center name-down">大
-               <view class="name-down" style="opacity: 0.7;">
-                   众会员·
+              <view class="name-down" style="opacity: 0.7;">
+                众会员·
               </view>
-          
+
               <view class="name-down" style="opacity: 0.5;">
                 全部特权
               </view>
@@ -29,9 +29,12 @@
 
         </view>
       </view>
-      <ice-img src="/static/me/member-one.png" />
-      <ice-img src="/static/me/member-two.png" />
-      <ice-img src="/static/me/member-three.png" />
+      <my-view bac="#F0F3F8">
+        <ice-img src="/static/me/member-one.png" />
+        <ice-img src="/static/me/member-two.png" />
+        <ice-img src="/static/me/member-three.png" />
+      </my-view>
+
 
 
     </scroll-view>
@@ -66,7 +69,7 @@ const navTextColor = computed(() => {
     }
 
     .name-down {
-      color:#fff;
+      color: #fff;
     }
   }
 }

@@ -5,7 +5,7 @@
         <my-img src="/static/money/nav.png" width="148rpx" height="56rpx"></my-img>
       </template>
     </new-nav>
-    <scroll-view scroll-y class="my-con">
+    <scroll-view scroll-y class="tab-con">
       <my-img class="first-top" src="/static/apply/apply-one.png" width="100%" height="98rpx"></my-img>
       <my-img class="img-gap" src="/static/apply/apply-two.png" width="100%" height="392rpx"></my-img>
       <my-img class="img-gap" src="/static/apply/apply-three.png" width="100%" height="742rpx"></my-img>

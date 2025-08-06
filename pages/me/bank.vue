@@ -6,14 +6,14 @@
 
       </template>
     </new-nav>
-    <scroll-view scroll-y class="tab-con" @scroll="onScroll">
+    <scroll-view scroll-y class="tab-con" @scroll="onScroll" style="background: #f5f5f5;">
       <ice-img src="/static/homeIcon/bus-one.png" />
       <ice-img src="/static/me/bus-two.png" />
       <ice-img src="/static/me/bbus-three.png" />
 
 
     </scroll-view>
-      <ice-img style="position: fixed;bottom:0" src="/static/me/bank-tab.png" />
+    <ice-img style="position: fixed;bottom:0" src="/static/me/bank-tab.png" />
 
   </view>
 </template>
